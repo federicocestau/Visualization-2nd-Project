@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <a class="navbar-brand" href="index.html">Visualizations</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Charts
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="bar.html">Bar</a>
+                <a class="dropdown-item" href="line.html">Line</a>
+                <a class="dropdown-item" href="realtime.html">Dashboard</a>
+      
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="dealers.html">Locator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="scrape.html">Scrape</a>
+            </li>
+          </ul>
+        </div>  
+      </nav>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <img src="images/dataviz.png"  width="500px;"/>
+                    <hr>
+                    <p>This project provides informative insight to the visualization of data for a top brand of a global lighting and entertainment manufacturer.  As the mananger of the website including all product, dealer and reporting this allows fast and accurate reporting to brand management.</p>
+
+                        In this project, the team has implemented the following for our visualizations:
+                        <ul>
+                            <li>Created & Configured an API with Google Analytics</li>
+                            <li>Created & Configured an API with Mapbox for plotting</li>
+                            <li>Created & Exported several datasets for various types of visualizations</li>
+                            <li>Setup database schema and imported documents</li>
+                            <li>Configured Flask and SQLAlchemy to export from the database</li>
+                            <li>Setup Python Flask RESTful API </li>
+
+                        </ul>
+                        <h3>How many Visitors visit the website?</h3>
+                        <ul>
+                            <li>This visualization shows realtime visits, including weekly & yearly comparisons, using the power of chart.js with an API. <a href="realtime.html">Check it out!</a></li>
+                        </ul>
+
+                        <h3>What Product Pages are Visited Most?</h3>
+                        <ul>
+                            <li>This visualization shows the amount of pageviews for the top 10 products on the website since January 1, 2020. <a href="bar.html">Check it out!</a></li>
+                        </ul>
+
+                        <h3>Where are the Dealers who Sell the Product?</h3>
+                        <ul>
+                            <li>This interactive visualization plots each domestic dealer in the United States. <a href="dealers.html">Check it out!</a></li>
+                        </ul>
+
+                        <h3>How are the Dealers' Websites representing the Top Product?</h3>
+                        <ul>
+                            <li>This interactive visualization shows the results of web scraping dealers' sites. <a href="scrape.html"> Check it out!</a></li>
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+</div>
+<br>
+<footer class="footer">
+    <p style="color: gray; background-color:#f8f9fa;padding-top: 20px;padding-left: 20px;font-size: 11px;">Project Team Members: Stacey Baroulette, Federico Cestau, Javy Armstrong</p>
+</footer>
+</body>
+</html>

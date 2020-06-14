@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Visualization Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand" href="index.html">Visualizations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+           Charts
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="bar.html">Bar</a>
+            <a class="dropdown-item" href="line.html">Line</a>
+            <a class="dropdown-item" href="realtime.html">Dashboard</a>
+  
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="dealers.html">Locator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="scrape.html">Scrape</a>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <div class="box">
+                <img src="images/postgreSQL.png"/>&nbsp; &nbsp; &nbsp; &nbsp; 
+                <img src="images/python.jpg" width="170"/>&nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/flask.png" width="125"/>
+                    <hr>
+                    <p>
+                        <ul>DataSet - RESTful API</ul>
+                        <p><a href="http://127.0.0.1:5000/dealers" target="_blank">Run Flask to Get JSON File from PostgreSQL</a></p>
+                    </p>
+            </div>
+        </div>
+    </div>
+      <div>
+        <div>
+          <aside class="filters">
+            <div>
+              <div>
+                <h3>Check Dealers' Website</h3>
+                <form id ="filter-form">
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <select id="name" name="name"onfocus="myFunction(this.id)">
+                            <option value="none" selected disabled hidden>-Select A Dealer-</option>
+                            <option value="123 DJ">123DJ.com</option>
+                            <option value="AGIPRODJ">agiprodj</option>
+                            <option value="American Musical Supply">American Musical Supply</option>
+                            <option value="Canal Sound and Light">Canal Sound & Light</option>
+                            <option value="Farralane">Farralane</option>
+                            <option value="Gear Club Direct">Gear Club Direct</option>
+                            <option value="Gigasonic">Gigasonic.com</option>
+                            <option value="Hollywood DJ">HollywoodDJ.com</option> 
+                            <option value="IDJNOW">IDJNOW</option> 
+                            <option value="Knight Sound and lighting">Knight Sound & Lighting</option>
+                            <option value="ProAudioStar">ProAudioStar</option>
+                            <option value="Musictrends">Music Trends</option>
+                            <option value="Musician's Friend">Musician's Friend</option>
+                            <option value="Northern Sound & Light">Northern Sound & Light</option>
+                            <option value="Planet DJ">Planet DJ</option>
+                            <option value="Sam Ash">Sam Ash</option>
+                            <option value="VMinnovations">VMInnovations</option>
+                            <option value="World of Stereo">World of Stereo</option>
+                          </select>
+                     </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-primary">Show Results</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-12">
+          <div id="table-area" class="">
+            <table id="dealer-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Name</th>
+                  <th class="table-head">Logo</th>
+                  <th class="table-head">Description</th>
+                  <th class="table-head">Price</th>
+                  <th class="table-head">Website</th>
+                  
+
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p style="padding-top: 20px;padding-left: 20px;font-size: 11px;">Project Team Members: Stacey Baroulette, Federico Cestau, Javy Armstrong</p>
+    </footer>
+  </div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="js/dealers.json"></script>
+<script src="js/index.js"></script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand" href="index.html">Visualizations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+           Charts
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="bar.html">Bar</a>
+            <a class="dropdown-item" href="line.html">Line</a>
+            <a class="dropdown-item" href="realtime.html">Dashboard</a>
+  
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="dealers.html">Locator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="scrape.html">Scrape</a>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <img src="images/mapbox_logo.png"  width="300px;"/>
+                    <img src="images/leaflet_logo.jpg"  width="300px;"/>
+                    <hr>
+                    <p>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.
+                        <ul>DataSet - Geojson File</ul>
+                        <li>This visualization is powered by an API which uses <a href="https://www.mapbox.com/" target="_blank">mapbox</a> and <a href="https://leafletjs.com/" target="_blank">Leaflet</a> to plot the company's dealers located in the United States.  </li>
+                    </p>
+
+                <form action="map.html">
+                    <label for="zcode">Enter a Zip Code</label><br>
+                    <input type="text" id="zcode" name="zcode"> 
+                    <br>
+                    <input type="submit" value="Find A Dealer">
+                </form>
+                </div>
+            </div>
+        </div>
+</div>
+<br>
+<footer class="footer">
+  <p style="color: gray; background-color:#f8f9fa;padding-top: 20px;padding-left: 20px;font-size: 11px;">Project Team Members: Stacey Baroulette, Federico Cestau, Javy Armstrong</p>
+</footer>
+</body>
+</html>

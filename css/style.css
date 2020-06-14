@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  width: 90px;
+  height: 70px;
+  padding: 6px;
+  font: 10px sans-serif;
+  text-align: center;
+  color: white;
+  background: blue;
+  border: 0;
+  border-radius: 10px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: green;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray; 
+    background-color:#f8f9fa;
+}
